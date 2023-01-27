@@ -12,14 +12,14 @@ namespace Task18
         static void Main(string[] args)
         {
             Console.WriteLine("Введите строку");
-            string str = Console.ReadLine();
+            var str = Console.ReadLine();
             Console.WriteLine($"Количество скобок корректно? {Check(str)}");
             Console.ReadKey();
         }
         static bool Check(string str)
         {
-            Stack<char> stack = new Stack<char>();
-            Dictionary<char, char> brackets = new Dictionary<char, char>
+            var stack = new Stack<char>();
+            var brackets = new Dictionary<char, char>
             {
                 {'(',')'},
                 {'{','}'},
