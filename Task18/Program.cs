@@ -18,7 +18,6 @@ namespace Task18
         }
         static bool Check(string str)
         {
-
             Stack<char> stack = new Stack<char>();
             Dictionary<char, char> brackets = new Dictionary<char, char>
             {
